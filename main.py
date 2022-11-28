@@ -1,6 +1,7 @@
 import discord
 import aiohttp
 import toml
+import os
 
 from discord.ext import commands
 
@@ -68,8 +69,8 @@ async def sync(ctx):
 
 
 if __name__ == "__main__":
-    with open(".env", "r") as file:
-        token = file.read()
+    token = os.environ["token"]
+    print(token)
 
     logger.info("Attempting to start")
     bot.run(token)
