@@ -2,5 +2,5 @@ discord.py==2.1.0
 toml==0.10.2
 requests==2.28.1
 tldr==3.1.0
-name-that-hash==1.11.0
-search-that-hash==0.2.8
+name-that-hash
+search-that-hash
